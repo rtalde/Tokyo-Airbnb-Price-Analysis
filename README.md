@@ -1,5 +1,5 @@
-# Tokyo-Airbnb-Price-Analysis
-## Project-Overview
+# Tokyo Airbnb Price Analysis
+## Project Overview
 Tokyo is one of the world's largest and most competitive Airbnb markets. This project analyzes over 11,000 Airbnb listings to identify the factors that influence listing prices and builds machine learning models capable of predicting prices from listing characteristics.
 
 This project combines 
@@ -9,7 +9,7 @@ This project combines
 - Classification Modeling
 - Model Explainability using SHAP
 
-### Business-Question
+### Business Question
 
 **What characteristics drive Airbnb prices in Tokyo and how accurately can listing prices be predicted from property and listing information**
 
@@ -19,16 +19,16 @@ This project combines
 
 Source: [Kaggle Tokyo Airbnb Open Data Dataset](https://www.kaggle.com/datasets/tsarromanov/tokyo-airbnb-open-data)
 
-### Listings-Dataset
+### Listings Dataset
 - 11,177 Airbnb Listings
 - 75 features
 
-### Reviews-Dataset
+### Reviews Dataset
 - 407,712 reviews
 - Review history through June 2023
 
 ---
-## Project-Workflow
+## Project Workflow
 
 - Data Cleaning
 - Exploratory Data Analysis
@@ -40,21 +40,21 @@ Source: [Kaggle Tokyo Airbnb Open Data Dataset](https://www.kaggle.com/datasets/
 
 ---
 
-## Key-Findings
+## Key Findings
 
-### 1.-Price-Distribution-is-Highly-Skewed
+### 1. Price Distribution is Highly Skewed
 Most listings are clustered in the lower and middle price ranges while a small number of luxury listings command extremely high prices.
 
 ![Price Distribution](images/price_distribution.png)
 
-### 2.-Location-is-a-Major-Pricing-Driver
+### 2. Location is a Major Pricing Driver
 Listings are heavily concentrated in central Tokyo neighborhoods such as Shinjuku, Shibuya, and Taito.
 
 ![Listing Density](images/listing_density.png)
 
 Neighborhood consistently emerged as one of the strongest predictors of price.
 
-### 3. Amenities-Fall-Into-Three-Distinct-Categories
+### 3. Amenities Fall Into Three Distinct Categories
 
 Amenity analysis suggested three broad groups:
 
@@ -68,9 +68,9 @@ Amenity analysis suggested three broad groups:
 
 ---
 
-## Machine-Learning-Results
+## Machine Learning Results
 
-### Regression-Models
+### Regression Models
 
 | Model | RMSE | R² |
 |---------|---------|---------|
@@ -92,7 +92,7 @@ The Random Forest captured nonlinear relationships between location, capacity, r
 
 ---
 
-### Classification-Model
+### Classification Model
 
 Listings were grouped into:
 
@@ -109,11 +109,11 @@ Using K-Nearest Neighbors:
 
 ---
 
-## Model-Explainability-(SHAP)
+## Model Explainability (SHAP)
 
 To understand why the model makes predictions, SHAP values were used.
 
-### Most-Important-Features
+### Most Important Features
 
 - Accommodates
 - Shinjuku Location
@@ -126,7 +126,7 @@ To understand why the model makes predictions, SHAP values were used.
 
 ![SHAP Feature Importance](images/shap_bar.png)
 
-### SHAP-Beeswarm-Plot
+### SHAP Beeswarm Plot
 
 The beeswarm plot shows both feature importance and whether a feature increases or decreases predicted price.
 
@@ -140,9 +140,9 @@ Key observations:
 
 ---
 
-## Technologies-Used
+## Technologies Used
 
-### Data-Analysis
+### Data Analysis
 - Python
 - Pandas
 - NumPy
@@ -151,7 +151,7 @@ Key observations:
 - Matplotlib
 - Seaborn
 
-### Machine-Learning
+### Machine Learning
 - Scikit-Learn
 - Random Forest
 - HistGradientBoosting
